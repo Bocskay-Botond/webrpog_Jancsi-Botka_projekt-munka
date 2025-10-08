@@ -1,0 +1,66 @@
+ody {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f0f4f8;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+/* Kártya konténer */
+.card {
+    width: 300px;
+    height: 200px;
+    perspective: 1000px; /* 3D tér */
+}
+
+/* A kártya "belső" része, amit forgatunk */
+.card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.7s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+}
+
+/* Flip trigger hoverrel */
+.card:hover .card-inner {
+    transform: rotateY(180deg);
+}
+
+/* Elülső és hátulsó oldal */
+.card-front, .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    backface-visibility: hidden; /* ne látszódjon a hátoldal az elején */
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Elülső oldal stílus */
+.card-front {
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+/* Hátulsó oldal stílus */
+.card-back {
+    background: #fff;
+    color: #333;
+    transform: rotateY(180deg);
+    font-weight: 500;
+    font-size: 1rem;
+    overflow-y: auto;
+    box-shadow: inset 0 0 10px rgba(0,0,0,0.1);
+}
