@@ -1,12 +1,101 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hu">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stylus</title>
-    <link rel="stylesheet" href="./jancsi.css">
+    <title>Stylus CSS Előprocesszor Bemutatása</title>
+    <link rel="stylesheet" href="style.css"> 
 </head>
 <body>
-    
+
+    <h1>A Stylus CSS Előprocesszor Bemutatása 🖊️</h1>
+
+    <p>A <strong>Stylus</strong> egy dinamikus, rugalmas és minimalista CSS előprocesszor, amelyet a Node.js-en futó Express keretrendszer fejlesztője, TJ Holowaychuk készített.</p>
+
+    <p>Fő erőssége a <strong>szintaxis rugalmassága</strong> és a többi előprocesszorhoz képest nagyobb szabadsága a kódírásban.</p>
+
+    <h2>A Stylus Fő Jellemzői és Szintaxisai</h2>
+
+    <p>A Stylus legnagyobb különlegessége a <strong>szintaxisának rugalmassága</strong>. A fejlesztő eldöntheti, mennyire akar minimalista lenni a kódolásban:</p>
+
+    <h3>1. Minimalista Szintaxis (Alapértelmezett)</h3>
+    <p>Ez a stílus a leginkább egyedi, és lehetővé teszi a legtöbb felesleges karakter elhagyását, mint a pontosvesszők (<code>;</code>), a kettőspontok (<code>:</code>) és a kapcsos zárójelek (<code>{}</code>). A struktúrát a <strong>behúzások</strong> (indentáció) biztosítják.</p>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Stylus Kód (.styl)</th>
+                <th>Hagyományos CSS Kód</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <div class="code-block">
+
+                    </div>
+                </td>
+                <td>
+                    <div class="code-block">
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h3>2. Hagyományos CSS Szintaxis</h3>
+    <p>Ha kényelmesebb a megszokott CSS/SCSS stílusban írni, a Stylus ezt is teljes mértékben támogatja:</p>
+    <div class="code-block">
+
+    </div>
+
+    <h2>Főbb Funkciók</h2>
+
+    <h3>1. Változók (Variables)</h3>
+    <p>A deklaráció egyszerűen egy érték hozzárendelése egy névhez, speciális jelek (<code>$</code>, <code>@</code>) nélkül.</p>
+    <div class="code-block">
+
+    </div>
+
+    <h3>2. Mixinek (Mixins)</h3>
+    <p>Lehetővé teszik a stílusblokkok újrafelhasználását.</p>
+    <div class="code-block">
+
+    </div>
+
+    <h2>Összehasonlítás a Sass/LESS-szel</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Jellemző</th>
+                <th>Stylus</th>
+                <th>Sass (SCSS)</th>
+                <th>LESS</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>Szintaxis Rugalmassága</strong></td>
+                <td>Rendkívül rugalmas: elhagyhatóak a <code>;, :, {}</code></td>
+                <td>Kevésbé rugalmas: kötelezőek a <code>;, }</code> (SCSS-ben)</td>
+                <td>Kevésbé rugalmas: kötelezőek a <code>;, }</code></td>
+            </tr>
+            <tr>
+                <td><strong>Változó Jelölés</strong></td>
+                <td>Nincs kötelező jelölés (<code>=</code>)</td>
+                <td><code>$</code> (pl. <code>$szin-alap</code>)</td>
+                <td><code>@</code> (pl. <code>@szin-alap</code>)</td>
+            </tr>
+            <tr>
+                <td><strong>Népszerűség</strong></td>
+                <td>Kisebb a Sass-hoz és LESS-hez képest.</td>
+                <td><strong>A legnépszerűbb.</strong></td>
+                <td>Közepesen népszerű.</td>
+            </tr>
+        </tbody>
+    </table>
+
 </body>
 </html>
