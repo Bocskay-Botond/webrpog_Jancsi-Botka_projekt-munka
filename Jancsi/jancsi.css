@@ -1,0 +1,67 @@
+/* Általános stílusok */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fcfcfc;
+}
+
+/* Címsorok stílusai */
+h1 {
+    color: #2c3e50;
+    border-bottom: 3px solid #3498db;
+    padding-bottom: 10px;
+}
+h2 {
+    color: #34495e;
+    margin-top: 35px;
+}
+h3 {
+    color: #16a085;
+    margin-top: 25px;
+}
+
+/* Kiemelt szöveg és kódblokkok */
+strong {
+    color: #c0392b; /* Vörös kiemelés */
+}
+code {
+    background-color: #ecf0f1;
+    padding: 2px 4px;
+    border-radius: 3px;
+    font-family: 'Courier New', monospace;
+    font-size: 0.9em;
+}
+
+/* A Stylus kód példák stílusa */
+.code-block {
+    background-color: #ecf0f1;
+    padding: 15px;
+    border-left: 5px solid #3498db; /* Kék bal oldali sáv */
+    margin: 15px 0;
+    white-space: pre-wrap;
+    font-family: 'Courier New', monospace;
+    font-size: 0.9em;
+    overflow-x: auto;
+}
+
+/* Táblázat stílusai */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+th {
+    background-color: #e8f4f8; /* Világoskék háttér a fejlécnek */
+    color: #333;
+    font-weight: bold;
+}
