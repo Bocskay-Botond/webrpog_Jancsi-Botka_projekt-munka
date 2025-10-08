@@ -3,7 +3,7 @@ body {
     font-family: 'Comic Sans MS', cursive, sans-serif; 
     color: #3d2b1f; 
     margin: 1em;
-    background-image: url(./images/fidesz.png);
+    background-image: url(../images/fidesz.png);
     background-size: cover;
 }
 
