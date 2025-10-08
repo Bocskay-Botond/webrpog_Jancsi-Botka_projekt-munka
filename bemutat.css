@@ -1,6 +1,9 @@
 body {
+    background-color: #f0e68c; 
+    font-family: 'Comic Sans MS', cursive, sans-serif; 
+    color: #3d2b1f; 
+    margin: 1;
     background-image:url(./images/background.png);
-    background-size: cover;
 }
 
 h1 {
@@ -21,5 +24,23 @@ h1 {
 }
 
 .box {
-    
+        font-family: 'Nosifier', cursive; 
+    transition: transform 0.3s;
+
 }
+
+.card:hover {
+    transform: rotate(3deg) scale(1.05); 
+}
+
+
+.main-header {
+    background-color: #8b4513; 
+    color: #fff8dc; 
+    text-align: center;
+    padding: 20px;
+    font-family: 'Nosifier', cursive; 
+    border-bottom: 10px solid #5c2d0b;
+    border-radius: 10%;
+}
+
