@@ -19,6 +19,11 @@ details {
     box-shadow: 0 4px 8px rgba(253, 253, 255, 0.1); 
     cursor: pointer;
     justify-content: center;
+    transition: 0.5s ease-in-out;
+}
+
+details:hover {
+    transform: scale(1.5) ;
 }
 
 summary {
