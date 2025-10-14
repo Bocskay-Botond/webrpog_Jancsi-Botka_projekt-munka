@@ -1,67 +1,87 @@
-/* Általános stílusok */
 body {
+
+    background: url(../images/stylus.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
     font-family: Arial, sans-serif;
     line-height: 1.6;
     max-width: 900px;
     margin: 20px auto;
     padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    background-color: #fcfcfc;
+}
+.container {
+    border-radius: 20px;
+    border: 3px solid;
+    border-color: rgb(22, 33, 43);
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.873);
+    color: whitesmoke;
+    transition:0.3s ease-in-out;
 }
 
-/* Címsorok stílusai */
-h1 {
-    color: #2c3e50;
-    border-bottom: 3px solid #3498db;
-    padding-bottom: 10px;
-}
-h2 {
-    color: #34495e;
-    margin-top: 35px;
-}
-h3 {
-    color: #16a085;
-    margin-top: 25px;
+a {
+    color: inherit;
+    text-decoration: none;
 }
 
-/* Kiemelt szöveg és kódblokkok */
-strong {
-    color: #c0392b; /* Vörös kiemelés */
+.rotate {
+    perspective: 800px;
+    transition: 1s ease-in-out;
+    transform: rotateZ(0deg);
+    padding-bottom: 50px;
+    width: 0px;
+    height: 0px;
+    font-size: larger;
 }
-code {
-    background-color: #ecf0f1;
-    padding: 2px 4px;
-    border-radius: 3px;
-    font-family: 'Courier New', monospace;
-    font-size: 0.9em;
-}
-
-/* A Stylus kód példák stílusa */
-.code-block {
-    background-color: #ecf0f1;
-    padding: 15px;
-    border-left: 5px solid #3498db; /* Kék bal oldali sáv */
-    margin: 15px 0;
-    white-space: pre-wrap;
-    font-family: 'Courier New', monospace;
-    font-size: 0.9em;
-    overflow-x: auto;
+.rotate:hover {
+    transform: rotateZ(360deg) scale(1.8);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
 }
 
-/* Táblázat stílusai */
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 20px 0;
+.container2 {
+    border-radius: 20px;
+    border: 3px solid;
+    border-color: rgb(22, 33, 43);
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.873);
+    color: whitesmoke;
+    margin-top:35px ;
+    transition:0.3s ease-in-out;
 }
-th, td {
-    border: 1px solid #ddd;
-    padding: 12px;
-    text-align: left;
+
+.container3 {
+    border-radius: 20px;
+    border: 3px solid;
+    border-color: rgb(22, 33, 43);
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.873);
+    color: whitesmoke;
+    margin-top:35px ;
+    transition:0.3s ease-in-out;
 }
-th {
-    background-color: #e8f4f8; /* Világoskék háttér a fejlécnek */
-    color: #333;
-    font-weight: bold;
+
+
+
+.container:hover {
+    transform:translateY(-2px) scale(1.08);
+    box-shadow: 0px 8px 15px rgb(49, 247, 118);
 }
+.container2:hover {
+    transform:translateY(-2px) scale(1.08);
+    box-shadow: 0px 8px 15px rgb(49, 247, 118);
+
+}
+.container3:hover {
+    transform:translateY(-2px) scale(1.08);
+    box-shadow: 0px 8px 15px rgb(49, 247, 118);
+
+}
+
+
+
+
+
+
+
+
