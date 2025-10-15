@@ -1,9 +1,8 @@
 body {
     background-color: #f0e68c; 
-    font-family: 'Comic Sans MS', cursive, sans-serif; 
-    color: #3d2b1f; 
+    font-family: 'Comic Sans MS', sans-serif; 
     margin: 1em;
-    background-image: url(../images/fidesz.png);
+    background-image: url(../images/foháttét.png);
     background-size: cover;
 }
 
@@ -12,7 +11,7 @@ details {
     height: 300px;
     width: 200px;
     background-color: #0000009c; 
-    border: 5px solid #ba0cffaa; 
+    border: 5px solid #0c9effaa; 
     padding: 20px;
     margin-bottom: 20px;
     border-radius: 15px;
@@ -29,7 +28,7 @@ details:hover {
 summary {
     display: flex;
     justify-content: flex-start;
-    font-family: 'Nosifier', cursive;
+    font-family: 'Nosifier';
     font-size: 1.5em;
     color: #f4f4f4;
     outline: none;
@@ -51,7 +50,7 @@ summary::-webkit-details-marker {
 
 h1 {
     text-align: center;
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
 .ikon {
