@@ -7,59 +7,172 @@
     <link rel="stylesheet" href="./lau.css">
 </head>
 <body>
-    <div class="card">
-        <div class="card-inner">
-          <div class="card-front">
-            Változók
-          </div>
-          <div class="card-back">
-            Az újrafelhasználható értékek, például színek, betűtípusok és mértékegységek tárolására a <code>@</code> szimbólumot használhatja.
-          </div>
-        </div>
-      </div>
-      
-      <div class="card">
-        <div class="card-inner">
-          <div class="card-front">
-            Mixins
-          </div>
-          <div class="card-back">
-            Újrafelhasználható CSS tulajdonságcsoportokat foglaljon bele más szabálykészletekbe.
-          </div>
-        </div>
-      </div>
 
-      <div class="card">
-        <div class="card-inner">
-          <div class="card-front">
-            Beágyazás
-          </div>
-          <div class="card-back">
-            A CSS-t hierarchikus struktúrában kell írni, amely tükrözi a HTML-t.
-          </div>
-        </div>
+  <header>LESS - css preprocesszor
+    <div><a href="../Fő/bemutat.html">Vissza a főoldalra</a></div>
+  </header>
 
-        <div class="card">
-            <div class="card-inner">
-              <div class="card-front">
-                Operációs rendszer:
-              </div>
-              <div class="card-back">
-                Többplatformos
-              </div>
-            </div>
+<div class="cards">
+
+ 
+  <div class="card flip" tabindex="0">
+    <div class="card-inner">
+      <div class="card-front">
+        1. Változók:<br> Újrafelhasználható értékek, pl. színek, mértékek.<br>
+        
       </div>
+      <div class="card-back">
+<pre>
+@lt-gray: #ddd;
+@background-dark: #512DA8;
+h1 {
+  color: @lt-gray;
+  background: 
+  @background-dark;
+}
+</pre>
+      </div>
+    </div>
+  </div>
+
+  <!-- 2. Mixinek - front: példa -->
+  <div class="card plain">
+    2. Mixinek: újrafelhasználható stíluscsoportok.
+    <div class="code-sample">
+<pre>
+.zero-margin {
+  margin: 0 auto;
+  background: white;
+}
+.row-header {
+  margin: zero-margin;
+  padding: 0 auto;
+}
+</pre>
+    </div>
+  </div>
+
+  <div class="card flip" tabindex="0">
+    <div class="card-inner">
+      <div class="card-front">
+        3. Beágyazás: CSS hierarchikus struktúrában, tükrözve a HTML-t.<br>
+       
+      </div>
+      <div class="card-back">
+<pre>
+@background-dark: #512DA8;
+.carousel {
+  background: @background-dark;
+  .carousel-item {
+    height: 300px;
+    img {
+      position: absolute;
+      top: 0; left: 0;
+      min-height: 300px;
+    }
+  }
+}
+</pre>
+      </div>
+    </div>
+  </div>
+
+  <div class="card plain">
+    4. Matematikai műveletek
+    <div class="code-sample">
+<pre>
+@carousel-item-height: 300px;
+
+.carousel-item {
+  height: @carousel-item-
+  height;
+}
+.carousel-item .item-large {
+  height: @carousel-item-
+  height * 2;
+}
+</pre>
+    </div>
+  </div>
+
+
+  <div class="card flip" tabindex="0">
+    <div class="card-inner">
+      <div class="card-front">
+        5. Függvények: matematikai, színkezelési, 
+        listázási műveletek.<br>
+      </div>
+      <div class="card-back">
+<pre>
+@base: 0.5;
+@width: 0.8;
+
+.class {
+  width: percentage
+  (@width);
+  color: saturate
+  (@base, 5%);
+  background-color: 
+  light(@base, 25%);
+}
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="card plain">
+    6. Rendszerkövetelmények:
+    <div class="code-sample">
+<pre>
+OS: Többplatformos
+Böngészők: IE8+, Firefox, 
+Chrome, Safari
+Fájl: .less
+</pre>
+    </div>
+  </div>
+
+
+  <div class="card flip" tabindex="0">
+    <div class="card-inner">
+      <div class="card-front">
+        7. Hogyan működik a LESS?<br>
+
+      </div>
+      <div class="card-back">
+<pre>
+lessc style.less style.css
+
+A böngésző nem tudja 
+közvetlenül feldolgozni 
+a LESS-t.
+Az előfeldolgozó 
+fordít CSS-é.
+</pre>
+      </div>
+    </div>
+  </div>
+
+  <div class="card plain">
+    8. Előnyök és Hátrányok:
+    <div class="code-sample">
+<pre>
+Előnyök:
+- Böngészőfüggetlen
+- Változók egyszerűsítik a 
+karbantartást
+
+Hátrányok:
+- Kevesebb keretrendszer, 
+mint a SASS
+- Bonyolult lehet kezdőknek
+</pre>
+    </div>
+  </div>
+
+</div>
+
+
 </body>
 </html>
-
-                <div>Matematikai műveletek: Számtani műveletek végrehajtása CSS-értékeken.</div>
-                <div>Függvények: Beépített függvények használata matematikai műveletekhez, színkezeléshez és egyebekhez.</div>
-            </td>
-            <td data-label="Rendszerkövetelmények">
-                <div>Operációs rendszer: Többplatformos</div>
-                <div>Böngésző támogatás: IE, Firefox, Google Chrome, Safari.</div>
-                <div>Fájltípus: Minden LESS fájlnak .less kiterjesztésűnek kell lennie.</div>
-            </td>
-        </tr>
-    </tbody>
-</table>
